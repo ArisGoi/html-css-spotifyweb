@@ -17,12 +17,6 @@ body{
     flex-wrap: wrap;
 }
 
-footer{
-    height: 135px;
-    width: 100%;
-    background-color: lightcoral;
-}
-
 /* Aside - Navigation */
 aside{
     height: calc(100vh - 135px);
@@ -92,4 +86,26 @@ main section{
     height: 400px;
     background-color: bisque;
     border: 1px solid black;
+}
+
+/* Footer */
+footer{
+    height: 135px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightcoral;
+}
+
+.f-left, .f-right{
+    width: calc((100% / 12) * 2);
+    min-width: 140px;
+}
+.f-center{
+    width: calc((100% / 12) * 5);
+    min-width: 180px;
+}
+
+footer div{
+    background-color: red;
 }
