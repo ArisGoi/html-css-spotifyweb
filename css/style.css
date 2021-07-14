@@ -17,12 +17,6 @@ body{
     flex-wrap: wrap;
 }
 
-main{
-    height: calc(100vh - 135px);
-    width: calc(100% - 230px);
-    background-color: lightcyan;
-}
-
 footer{
     height: 135px;
     width: 100%;
@@ -64,4 +58,38 @@ aside .logo{
     width: 100%;
     flex-shrink: 0;
     background-color: saddlebrown;
+}
+
+/* Main Content */
+.main-width{
+    width: calc(100% - 230px);
+}
+main{
+    height: calc(100vh - 135px);
+    background-color: lightcyan;
+    overflow: auto;
+}
+
+.main-container{
+    padding-top: 70px;
+}
+
+main header#banner-upgrade{
+    height: 70px;
+    background-color: seagreen;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+main nav{
+    width: 100%;
+    height: 70px;
+    background-color: aqua;
+}
+
+main section{
+    height: 400px;
+    background-color: bisque;
+    border: 1px solid black;
 }
