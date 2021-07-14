@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+        /* regular: 400 */
+        /* Semi-Bold: 600 */
 }
 
 .clearfix::after {
@@ -23,35 +28,39 @@ aside{
     width: 230px;
     display: flex;
     flex-direction: column;
-    background-color: lightgreen;
+    background-color: #000000;
+    color: #c0c0c0;
+}
+
+aside > div, aside > nav{
+    padding: 10px;
 }
 
 aside .logo{
     height: 70px;
     width: 100%;
     flex-shrink: 0;
-    background-color: red;
+}
+aside .logo img{
+    height: 100%;
 }
 
 .side-nav{
     height: 150px;
     width: 100%;
     flex-shrink: 0;
-    background-color: blue;
 }
 
 .aside-lists-box{
     height: 50px;
     width: 100%;
     flex-grow: 1;
-    background-color: purple;
 }
 
 .aside-f{
     height: 100px;
     width: 100%;
     flex-shrink: 0;
-    background-color: saddlebrown;
 }
 
 /* Main Content */
