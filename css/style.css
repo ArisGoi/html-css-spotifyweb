@@ -27,7 +27,7 @@ body{
 span.plus-icon{
     padding: 0px 10px;
     font-size: 36px;
-    background-color: white;
+    background-color: #A3A3A3;
     color: black;
     vertical-align: middle;
 }
@@ -49,7 +49,7 @@ aside{
     display: flex;
     flex-direction: column;
     background-color: #000000;
-    color: #c0c0c0;
+    color: #A3A3A3;
 }
 
 aside > div, aside > nav{
@@ -81,7 +81,7 @@ aside .logo img{
     flex-grow: 1;
 }
 .aside-lists-box button{
-    color: white;
+    color: #A3A3A3;
     background-color: transparent;
     border: none;
     margin: 17px 0px;
@@ -113,7 +113,7 @@ aside .logo img{
 }
 main{
     height: calc(100vh - 135px);
-    background-color: lightcyan;
+    background-color: #141922;
     overflow: auto;
 }
 
@@ -123,7 +123,7 @@ main{
 
 main header#banner-upgrade{
     height: 70px;
-    background-color: seagreen;
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     right: 0;
@@ -132,7 +132,16 @@ main header#banner-upgrade{
 main nav{
     width: 100%;
     height: 70px;
-    background-color: aqua;
+}
+main nav ul{
+    text-align: center;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: #A3A3A3;
+}
+main nav li{
+    display: inline-block;
+    margin: 0 10px;
 }
 
 main section{
@@ -147,7 +156,7 @@ footer{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: lightcoral;
+    background-color: #282828;
 }
 
 .f-left, .f-right{
