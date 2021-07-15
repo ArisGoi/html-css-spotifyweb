@@ -17,6 +17,11 @@
 }
 
 /* common */
+.all-container{
+    width: 100%;
+    height: calc(100vh - 135px);
+    display: flex;
+}
 .float-right{
     float: right;
 }
@@ -132,11 +137,10 @@ aside .logo img{
 
 
 /* Main Content */
-.main-width{
-    width: calc(100% - 230px);
-}
 main{
-    height: calc(100vh - 135px);
+    height: 100%;
+    width: 0;
+    flex-grow: 1;
     background-color: #141922;
     overflow: auto;
 }
@@ -166,6 +170,7 @@ main header#banner-upgrade{
     padding: 20px 0px;
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
+    width: calc(100% - 230px);
     top: 0;
     right: 0;
 }
@@ -225,7 +230,7 @@ footer{
 
 .f-left, .f-right{
     width: calc((100% / 12) * 2);
-    min-width: 140px;
+    min-width: 160px;
 }
 .f-center{
     width: calc((100% / 12) * 5);
@@ -233,5 +238,5 @@ footer{
 }
 
 footer div{
-    background-color: red;
+    border: 1px solid red;
 }
