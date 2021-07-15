@@ -94,6 +94,10 @@ aside .logo img{
     height: 100%;
 }
 
+aside .logo img.logo-XS{
+    display: none;
+}
+
 .side-nav{
     padding-top: 20px;
     width: 100%;
@@ -203,8 +207,8 @@ main nav li{
 }
 
 .album{
-    height: 100%px;
-    width: calc((100% / 6) - 25px);
+    height: 100%;
+    width: calc((100% / 6) - 30px);
     text-align: center;
     margin: 0px 15px;
 }
@@ -213,6 +217,9 @@ main nav li{
 }
 .album h3 {
     margin: 8px 0px;
+}
+.album h4 {
+    margin-bottom: 10px;
 }
 
 .album.circle img{
