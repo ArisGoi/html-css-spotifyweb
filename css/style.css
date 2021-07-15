@@ -105,6 +105,22 @@ aside .logo img.logo-XS{
 }
 .side-nav li{
     margin-bottom: 10px;
+    position: relative;
+}
+
+.side-nav li.current{
+    color: white;
+}
+.side-nav li.current::after{
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    height: 30px;
+    width: 3px;
+    background-color: lime;
 }
 
 .aside-lists-box{
@@ -191,6 +207,18 @@ main nav ul{
 main nav li{
     display: inline-block;
     margin: 0 10px;
+    position: relative;
+}
+main nav li.current::after{
+    content: '';
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    height: 3px;
+    width: 50px;
+    background-color: lime;
 }
 
 /* Main -- Albums */
