@@ -153,7 +153,6 @@ main{
     width: 100%;
     padding: 15px;
     color: #fff;
-    border: 1px solid orange;
 }
 .flex-container section > h2{
     margin-bottom: 15px;
@@ -173,7 +172,6 @@ main header#banner-upgrade{
 
 main nav{
     width: 100%;
-    height: 70px;
 }
 main nav ul{
     text-align: center;
@@ -208,9 +206,12 @@ main nav li{
 .album img {
     width: 100%;
 }
-
 .album h3 {
     margin: 8px 0px;
+}
+
+.album.circle img{
+    border-radius: 50%;
 }
 
 /* Footer */
