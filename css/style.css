@@ -28,6 +28,14 @@ ul{
     list-style-type: none;
 }
 
+h3{
+    font-size: 16px;
+}
+h4 {
+    color: #A3A3A3;
+    font-size: 14px;
+}
+
 /* Button */
 .btn-clean{
     padding: 10px 15px;
@@ -136,6 +144,24 @@ main{
 .main-container{
     padding-top: 80px;
 }
+.flex-container{
+    padding: 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-container section{
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    border: 1px solid orange;
+}
+.flex-container section > h2{
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+.flex-container section > h4{
+    margin-bottom: 20px;
+}
 
 main header#banner-upgrade{
     padding: 20px 0px;
@@ -160,10 +186,31 @@ main nav li{
     margin: 0 10px;
 }
 
-main section{
-    height: 400px;
-    background-color: bisque;
-    border: 1px solid black;
+/* Main -- Albums */
+.sec-album-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sec-album-container .album:first-child{
+    margin-left: 0px;
+}
+.sec-album-container .album:last-child{
+    margin-right: 0px;
+}
+
+.album{
+    height: 100%px;
+    width: calc((100% / 6) - 25px);
+    text-align: center;
+    margin: 0px 15px;
+}
+.album img {
+    width: 100%;
+}
+
+.album h3 {
+    margin: 8px 0px;
 }
 
 /* Footer */
