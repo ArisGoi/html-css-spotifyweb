@@ -311,8 +311,13 @@ footer .f-left div.mini-cover-actions i{
 footer .f-center{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
+}
+.controls, .song-bar{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 footer .f-center button{
     background-color: transparent;
@@ -349,4 +354,32 @@ footer .f-center i.fa-caret-left::after{
 }
 footer .f-center i.fa-caret-right::after{
     right: -2px;
+}
+
+/* TYPE RANGE */
+.song-bar{
+    padding: 15px 0px;
+    width: 80%;
+    color: white;
+}
+#music-slider{
+    flex-grow: 1;
+    flex-basis: 100px;
+    margin: 0 15px;
+}
+input[type="range"]{
+    filter: grayscale(100%) invert(95%);
+    outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+    position: relative;
+    cursor: pointer;
+    transform: scale(1.2) translateX(-25%);
+    filter: opacity(0);
+}
+input[type="range"]:hover {
+    filter: invert(95%) grayscale(0%) brightness(1.5) hue-rotate(30deg) saturate(2);
+}
+input[type="range"]:hover::-webkit-slider-thumb {
+    filter: opacity(1);
 }

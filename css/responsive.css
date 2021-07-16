@@ -45,4 +45,24 @@
     .aside-f{
         margin-top: auto;
     }
+
+    footer .f-center i.fa-play-circle{
+        font-size: 28px;
+    }
+    footer .f-center i.fa-redo-alt, footer .f-center i.fa-random{
+        font-size: 16px;
+    }
+    footer .f-center i[class*="fa-caret"]{
+        font-size: 30px;
+    }
+    footer .f-center i[class*="fa-caret"]::after{
+        height: 13px;
+        width: 4px;
+    }
+    footer .f-center i.fa-caret-left::after{
+        left: -2px;
+    }
+    footer .f-center i.fa-caret-right::after{
+        right: -2px;
+    }
 }
