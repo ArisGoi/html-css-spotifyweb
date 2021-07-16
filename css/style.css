@@ -198,7 +198,7 @@ main{
 
 main header#banner-upgrade{
     padding: 20px 0px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     width: calc(100% - 230px);
     top: 0;
@@ -284,9 +284,13 @@ footer{
 .f-center{
     width: calc((100% / 12) * 5);
     min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Footer Controls */
+/* Footer Controls Left */
 footer .f-left img{
     height: 80%;
 }
@@ -307,13 +311,7 @@ footer .f-left div.mini-cover-actions i{
     margin-left: 10px;
 }
 
-/* --- */
-footer .f-center{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+/* Footer Controls Center */
 .controls, .song-bar{
     display: flex;
     align-items: center;
@@ -355,6 +353,14 @@ footer .f-center i.fa-caret-left::after{
 footer .f-center i.fa-caret-right::after{
     right: -2px;
 }
+
+/* Footer Controls Right */
+.f-right i{
+    color: white;
+    font-size: 18px;
+    margin-right: 12px;
+}
+
 
 /* TYPE RANGE */
 .song-bar{
