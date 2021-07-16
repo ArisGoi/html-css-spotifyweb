@@ -24,6 +24,7 @@
 }
 .float-right{
     float: right;
+    margin-right: 20px;
 }
 body{
     display: flex;
@@ -114,12 +115,12 @@ aside .logo img.logo-XS{
 .side-nav li.current::after{
     content: '';
     position: absolute;
-    left: -10px;
+    left: -51px;
     top: 50%;
     transform: translateY(-50%);
 
     height: 30px;
-    width: 3px;
+    width: 40px;
     background-color: lime;
 }
 
@@ -127,6 +128,7 @@ aside .logo img.logo-XS{
     padding-top: 15px;
     height: 100px;
     width: 100%;
+    overflow-y: auto;
     flex-grow: 1;
 }
 .aside-lists-box button{
