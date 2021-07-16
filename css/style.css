@@ -34,6 +34,10 @@ ul{
     list-style-type: none;
 }
 
+li:hover{
+    color: white;
+}
+
 h3{
     font-size: 18px;
 }
@@ -88,6 +92,8 @@ aside{
     flex-direction: column;
     background-color: #000000;
     color: #A3A3A3;
+    position: relative;
+    z-index: 9;
 }
 
 aside > div, aside > nav{
@@ -203,6 +209,10 @@ main header#banner-upgrade{
     width: calc(100% - 230px);
     top: 0;
     right: 0;
+    z-index: 8;
+}
+main header#banner-upgrade button:hover{
+    transform: scale(1.1);
 }
 
 main nav{
@@ -249,9 +259,11 @@ main nav li.current::after{
     width: calc((100% / 6) - 30px);
     text-align: center;
     margin: 0px 15px;
+    position: relative;
 }
 .album img {
     width: 100%;
+    position: relative;
 }
 .album h3 {
     margin: 8px 0px;
@@ -259,9 +271,22 @@ main nav li.current::after{
 .album h4 {
     margin-bottom: 10px;
 }
-
 .album.circle img{
     border-radius: 50%;
+}
+
+.album:hover span::after{
+    content: '\f144';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    font-size: 50px;
+}
+.album:hover img{
+    filter: brightness(0.3);
 }
 
 /* Footer */
