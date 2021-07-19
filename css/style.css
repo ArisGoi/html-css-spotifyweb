@@ -276,32 +276,23 @@ main nav li.current::after{
     border-radius: 50%;
 }
 .overlay-cover{
-    min-height: 10px;
-    min-width: 10px;
     position: relative;
 }
-.overlay-cover::after{
-    background-color: red;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 10;
-}
-
-/* .album:hover div::after{
+.album:hover .overlay-cover::after{
     content: '\f144';
-    width: 100%;
     font-family: "Font Awesome 5 Free";
     font-weight: 400;
-    position: absolute;
+    font-size: 60px;
+    width: 100%;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    font-size: 50px;
+    position: absolute;
+    z-index: 10;
 }
 .album:hover img{
     filter: brightness(0.3);
-} */
+}
 
 /* Footer */
 footer{
@@ -316,7 +307,7 @@ footer{
 
 .f-left, .f-right{
     width: calc((100% / 12) * 2);
-    min-width: 160px;
+    min-width: 120px;
     display: flex;
     align-items: center;
 }
@@ -411,6 +402,10 @@ footer .f-center i.fa-caret-right::after{
     flex-grow: 1;
     flex-basis: 100px;
     margin: 0 15px;
+}
+#volume-slider{
+    min-width: 30px;
+    max-width: 120px;
 }
 input[type="range"]{
     filter: grayscale(100%) invert(95%);

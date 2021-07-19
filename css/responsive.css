@@ -19,6 +19,19 @@
         margin-right: 0px;
     }
 
+    .f-right{
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .f-left{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .f-left i{
+        margin-top: 20px;
+    }
+
 }
 
 @media screen and (max-width: 600px){
