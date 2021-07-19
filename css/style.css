@@ -275,15 +275,17 @@ main nav li.current::after{
 .album.circle img{
     border-radius: 50%;
 }
-
 .overlay-cover{
-    display: block;
+    min-height: 10px;
+    min-width: 10px;
+    position: relative;
 }
-.overlay-cover:hover::after{
+.overlay-cover::after{
     background-color: red;
-    position: absolute;
     height: 100%;
     width: 100%;
+    position: absolute;
+    z-index: 10;
 }
 
 /* .album:hover div::after{
