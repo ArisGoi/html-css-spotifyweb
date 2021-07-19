@@ -78,4 +78,24 @@
     footer .f-center i.fa-caret-right::after{
         right: -2px;
     }
+
+    .f-left label h6{
+        display: none;
+    }
+    .f-left label{
+        position: relative;
+    }
+    .f-left label h5{
+        position: absolute;
+        top: 90px;
+        left: -90px;
+    }
+    .f-left{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    footer .f-left div.mini-cover-actions{
+        margin-left: -10px;
+    }
 }
