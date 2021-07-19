@@ -264,6 +264,7 @@ main nav li.current::after{
 .album img {
     width: 100%;
     position: relative;
+    display: block;
 }
 .album h3 {
     margin: 8px 0px;
@@ -275,19 +276,30 @@ main nav li.current::after{
     border-radius: 50%;
 }
 
-.album:hover span::after{
+.overlay-cover{
+    display: block;
+}
+.overlay-cover:hover::after{
+    background-color: red;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/* .album:hover div::after{
     content: '\f144';
+    width: 100%;
     font-family: "Font Awesome 5 Free";
     font-weight: 400;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -100%);
+    transform: translateY(-50%);
+    left: 0;
     font-size: 50px;
 }
 .album:hover img{
     filter: brightness(0.3);
-}
+} */
 
 /* Footer */
 footer{
